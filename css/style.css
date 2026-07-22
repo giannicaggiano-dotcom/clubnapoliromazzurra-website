@@ -53,12 +53,9 @@ header {
 
   .logo img{
 
-    height:95px;
+   height:80px;
     width:auto;
-
     display:block;
-
-    transition:.3s;
 
 }
 
