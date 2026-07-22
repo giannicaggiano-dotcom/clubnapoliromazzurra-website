@@ -51,20 +51,19 @@ header {
 
 .logo img{
 
-  .logo img{
-
-   height:80px;
+ height:80px;
     width:auto;
     display:block;
-
-}
-
+    transition:transform .3s ease;
 }
 
 .logo img:hover{
-
     transform:scale(1.05);
-
+}
+nav{
+    display:flex;
+    align-items:center;
+    gap:40px;
 }
 
 nav a {
