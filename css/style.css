@@ -51,12 +51,16 @@ header {
 
 .logo img{
 
-    height:70px;
+  .logo img{
+
+    height:95px;
     width:auto;
 
     display:block;
 
     transition:.3s;
+
+}
 
 }
 
