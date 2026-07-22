@@ -49,19 +49,21 @@ header {
     align-items: center;
 }
 
-.logo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem;
-    letter-spacing: 2px;
+.logo img{
+
+    height:70px;
+    width:auto;
+
+    display:block;
+
+    transition:.3s;
+
 }
 
-.logo span {
-    color: #C9A24A;
-}
+.logo img:hover{
 
-nav {
-    display: flex;
-    gap: 30px;
+    transform:scale(1.05);
+
 }
 
 nav a {
