@@ -1,0 +1,313 @@
+/* ===========================
+   RESET
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #06162f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(6,22,47,.92);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+}
+
+.navbar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #C9A24A;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #C9A24A;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero {
+
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    position:relative;
+    overflow:hidden;
+
+    background:
+        radial-gradient(circle at top right,
+        rgba(201,162,74,.18),
+        transparent 30%),
+
+        radial-gradient(circle at bottom left,
+        rgba(201,162,74,.12),
+        transparent 35%),
+
+        linear-gradient(135deg,
+        #031126 0%,
+        #082349 45%,
+        #06162f 100%);
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    border:1px solid rgba(201,162,74,.10);
+
+    border-radius:50%;
+
+    top:-350px;
+    right:-150px;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    border:1px solid rgba(201,162,74,.08);
+
+    border-radius:50%;
+
+    bottom:-250px;
+    left:-120px;
+
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+    padding:20px;
+}
+
+.hero h1{
+
+    font-family:'Bebas Neue',sans-serif;
+    font-size:5.5rem;
+    letter-spacing:4px;
+
+}
+
+.hero h2{
+
+    margin-top:20px;
+    font-size:1.5rem;
+    font-weight:400;
+
+}
+
+.hero p{
+
+    margin-top:30px;
+    color:#C9A24A;
+    font-weight:700;
+    letter-spacing:3px;
+
+}
+
+.btn{
+
+    display:inline-block;
+    margin-top:40px;
+    padding:15px 35px;
+
+    border:2px solid #C9A24A;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#C9A24A;
+    color:#06162f;
+
+}
+
+/* ===========================
+   SEZIONI
+=========================== */
+
+.section{
+    padding:100px 0;
+}
+
+.dark{
+    background:#082349;
+}
+
+.section h2{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:3rem;
+    color:#C9A24A;
+    margin-bottom:25px;
+}
+
+.section p{
+    max-width:850px;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+    margin-top:40px;
+
+}
+
+.card{
+
+    background:#0b2952;
+
+    padding:30px;
+
+    border-radius:15px;
+
+}
+
+.card h3{
+
+    color:#C9A24A;
+
+    margin-bottom:15px;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#031126;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+footer h3{
+
+    font-family:'Bebas Neue',sans-serif;
+
+    font-size:2.2rem;
+
+    margin-bottom:15px;
+
+}
+
+.motto{
+
+    color:#C9A24A;
+
+    margin:20px 0;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:900px){
+
+nav{
+display:none;
+}
+
+.hero h1{
+font-size:3.2rem;
+}
+
+.hero h2{
+font-size:1.2rem;
+}
+
+.section h2{
+font-size:2.3rem;
+}
+
+}
